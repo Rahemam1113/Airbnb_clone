@@ -30,9 +30,9 @@ app.use(methodOverride("_method"));
 app.engine("ejs", ejsMate);
 app.use(express.static(path.join(__dirname, "/public")));//this serves the css files / static files from public folder
 
-app.get("/", (req,res) => {
-    res.send("This is Root");//an API 
-})
+// app.get("/", (req,res) => {
+//     res.send("This is Root");//an API 
+// })
 
 // app.get("/testListing", async (req,res)=>{// this is a async function 
 //     let sampleListing = new Listing({    //creating a sample data which saves into the table or collection
